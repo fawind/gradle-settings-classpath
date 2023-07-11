@@ -1,0 +1,12 @@
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.guava:guava:32.1.1-jre'
+    }
+}
+
+// "splitToStream" was introduced in Guava 28.2
+com.google.common.base.Splitter.on("-").splitToStream("hello-world").forEach({ println it })

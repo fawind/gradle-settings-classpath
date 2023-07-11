@@ -1,0 +1,12 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.guava:guava:23.6-jre'
+        // Adding a higher dependency here fixes the issues
+        // classpath 'com.google.guava:guava:32.1.1-jre'
+    }
+}
+
+rootProject.name = 'gradle-settings-classpath'
